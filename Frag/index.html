@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frag website</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="test.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <img src="img/fragLogo.jpeg" alt="fragLogoImg" class="logo" />
+    </nav>
+    <aside class="aside">
+      <li>
+        <a
+          class="main-nav-link"
+          href="https://discord.gg/CNFMyJAS"
+          target="_blank"
+        >
+          <svg
+            class="icon"
+            width="6.4rem"
+            height="6.4rem"
+            viewBox="0 0 1024 1024"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="512" cy="512" r="512" style="fill: #5865f2" />
+            <path
+              d="M689.43 349a422.21 422.21 0 0 0-104.22-32.32 1.58 1.58 0 0 0-1.68.79 294.11 294.11 0 0 0-13 26.66 389.78 389.78 0 0 0-117.05 0 269.75 269.75 0 0 0-13.18-26.66 1.64 1.64 0 0 0-1.68-.79A421 421 0 0 0 334.44 349a1.49 1.49 0 0 0-.69.59c-66.37 99.17-84.55 195.9-75.63 291.41a1.76 1.76 0 0 0 .67 1.2 424.58 424.58 0 0 0 127.85 64.63 1.66 1.66 0 0 0 1.8-.59 303.45 303.45 0 0 0 26.15-42.54 1.62 1.62 0 0 0-.89-2.25 279.6 279.6 0 0 1-39.94-19 1.64 1.64 0 0 1-.16-2.72c2.68-2 5.37-4.1 7.93-6.22a1.58 1.58 0 0 1 1.65-.22c83.79 38.26 174.51 38.26 257.31 0a1.58 1.58 0 0 1 1.68.2c2.56 2.11 5.25 4.23 8 6.24a1.64 1.64 0 0 1-.14 2.72 262.37 262.37 0 0 1-40 19 1.63 1.63 0 0 0-.87 2.28 340.72 340.72 0 0 0 26.13 42.52 1.62 1.62 0 0 0 1.8.61 423.17 423.17 0 0 0 128-64.63 1.64 1.64 0 0 0 .67-1.18c10.68-110.44-17.88-206.38-75.7-291.42a1.3 1.3 0 0 0-.63-.63zM427.09 582.85c-25.23 0-46-23.16-46-51.6s20.38-51.6 46-51.6c25.83 0 46.42 23.36 46 51.6.02 28.44-20.37 51.6-46 51.6zm170.13 0c-25.23 0-46-23.16-46-51.6s20.38-51.6 46-51.6c25.83 0 46.42 23.36 46 51.6.01 28.44-20.17 51.6-46 51.6z"
+              style="fill: #fff"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.tiktok.com/@frag_cs1.6?referer_url=127.0.0.1%3A5500%2Findex.html&refer=creator_embed&embed_source=70805739%2C70805739%2C70805739%2C120009725%2C120008483%3Bnull%3Bembed_creator_card"
+          target="_blank"
+          ><img
+            src="https://cdn.cdnlogo.com/logos/t/94/tiktok-icon-black-1-1.svg"
+            class="icon"
+            width="60.4rem"
+            height="60.4rem"
+            viewBox="0 0 1024 1024"
+        /></a>
+      </li>
+    </aside>
+    <div class="table-Container">
+      <table id="servers">
+        <tbody>
+          <tr>
+            <th>שם</th>
+            <th>שחקנים</th>
+            <th>מפה</th>
+            <th>כתובת</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>Frag # Auto-Mix 1</td>
+            <td id="mix1Players"></td>
+            <td id="mix1Map"></td>
+            <td>
+              <a href="steam://connect/181.214.197.197:10201"
+                >181.214.197.197:10201</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Frag # Auto-Mix 2</td>
+            <td id="mix2Players"></td>
+            <td id="mix2Map"></td>
+            <td>
+              <a href="steam://connect/181.214.197.197:10202"
+                >181.214.197.197:10202</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Frag # Auto-Mix 3</td>
+            <td id="mix3Players"></td>
+            <td id="mix3Map"></td>
+            <td>
+              <a href="steam://connect/181.214.197.197:10204"
+                >181.214.197.197:10204</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Frag # Auto-Mix 4 <span><strong>[GameGuard]</strong></span></td>
+            <td id="mix4Players"></td>
+            <td id="mix4Map"></td>
+            <td>
+              <a href="steam://connect/181.214.197.197:10206"
+                >181.214.197.197:10206</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Frag # Surf [Level Mod][Skins]FastDL</td>
+            <td id="surfPlayers"></td>
+            <td id="surfMap"></td>
+            <td>
+              <a href="steam://connect/181.214.197.197:10203">
+                181.214.197.197:10203</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Frag # Zombie | v1.0 | FastDl | Voxbyte.io</td>
+            <td id="zombiePlayers"></td>
+            <td id="zombieMap"></td>
+            <td>
+              <a href="steam://connect/51.195.61.125:27102">
+                51.195.61.125:27102</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <section class="form">        
+        <div>     
+        <form name="send" netlify dir="rtl">          
+            <div>
+              <label for="full-name">שם מלא</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="גיא אדרי"
+                name="full-name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="nick">כינוי בשרת</label>
+              <input
+                id="nick"
+                type="text"
+                placeholder="Nejil"
+                name="nick"
+                required
+              />
+            </div>
+          
+          
+            <div>
+              <label for="select-complaintOrRequest">תלונה/בקשה</label>
+              <select
+                id="select-complaintOrRequest"
+                name="select-complaintOrRequest"
+                required
+              >
+                <option value="">בחר אחת מהאפשרויות:</option>
+                <option value="תלונה">תלונה</option>
+                <option value="בקשה">בקשה</option>
+                <option value="אחר">אחר</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div>
+              <label for="select-where">איפה שמעתם עלינו?</label>
+              <select id="select-where" name="select-where" required>
+                <option value="">בחר אחת מהאפשרויות:</option>
+                <option value="חברים ומשפחה">חברים ומשפחה</option>
+                <option value="פייסבוק">פייסבוק</option>
+                <option value="אינסטגרם">אינסטגרם</option>
+                <option value="טיקטוק">טיקטוק</option>
+                <option value="אחר">אחר</option>
+              </select>
+            </div>
+          
+          <div>
+            <label for="text">טקסט</label>
+          </div>
+          <div>
+            <textarea id="text" type="textarea" name="text" required></textarea>
+          </div>
+          <button class="btn-form">שלח</button>
+        </div>
+        </form>        
+      </section>
+      
+    </div>
+    <div class="section-hero">
+      <blockquote
+        class="tiktok-embed"
+        cite="https://www.tiktok.com/@frag_cs1.6"
+        data-unique-id="frag_cs1.6"
+        data-embed-type="creator"
+        style="max-width: 72rem; min-width: 288px"
+      >
+        <section>
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@frag_cs1.6?refer=creator_embed"
+            >@frag_cs1.6</a
+          >
+        </section>
+      </blockquote>
+      <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+    <footer class="footer">I am footer</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
