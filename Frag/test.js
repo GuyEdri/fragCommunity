@@ -60,8 +60,38 @@ app.get("/results/surf", (req, res) => {
     });
 });
 
+app.get("/results/jail", (req, res) => {
+  queryGameServerInfo("181.214.197.197:10205")
+    .then((infoResponse) => {
+      res.json(infoResponse);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+});
+
 app.get("/results/zombie", (req, res) => {
   queryGameServerInfo("51.195.61.125:27102")
+    .then((infoResponse) => {
+      res.json(infoResponse);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+});
+
+app.get("/results/zombieEscape", (req, res) => {
+  queryGameServerInfo("51.195.61.125:27104")
+    .then((infoResponse) => {
+      res.json(infoResponse);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+});
+
+app.get("/results/baseBuilder", (req, res) => {
+  queryGameServerInfo("51.195.61.125:27101")
     .then((infoResponse) => {
       res.json(infoResponse);
     })
